@@ -5,11 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       
+        body{
+            background-color: cyan;
+          
+        }
+        #heading{
+            text-align: center;
+            margin-top: 25px;
+            font-style: oblique;
+            color: blueviolet;
+          }
+         .name {
+            margin: 20px;
+            padding: 5px;
+            border-style: groove;
+            border-color: yellowgreen;
+          
+          }
+          #submit{
+            background-color: rgb(rgb(227, 42, 42), green, rgb(14, 14, 67));
+          }
+
+        
+    </style>
 </head>
 <body>
-    <h1>im sohel</h1>
-    <p>hii im Sohel khatik </p>
-    <input type="text" id="name">
-    <label for="name">NAME</label>
+    <div id="sform">
+    <form >
+          <u>  <h1 id="heading">STUDENT REGISTRATION FORM</h1></u><BR></BR><hr>
+
+            <label for="firstname">FIRST NAME :</label>
+            <input type="text" id="firstname" class="name" placeholder="first name" name="name">
+
+            <label for="middlename">MIDDLE NAME :</label>
+            <input type="text" id="middlename" class="name" placeholder="middle name" name="name">
+
+            <label for="lastname">LAST NAME :</label>
+            <input type="text" id="lastname" class="name" placeholder="last name" name="name"><br>
+
+            <label for="education">Select Your Education</label>
+
+            <select name="education" id="education" class="name">
+            <option value="BE">BE</option>
+            <option value="HSC">HSC</option>
+            <option value="SSC">SSC</option>
+        </select>
+         <label for="DOB">Date of Birth</label>
+        <input type="date" name="dob" id="DOB" name="DOB" class="name">
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="Gender">
+        <label for="male">MALE</label>
+        <input type="radio" name="Gender" id="female" size="25px">
+        <label for="female">FEMALE</label>
+        <input type="radio" name="Gender" id="other">
+        <label for="other">OTHER</label><BR></BR>
+
+        <label for="number">PHONE NO:</label>
+        <input type="tel" name="number" id="number" class="name"><br>
+    
+
+      <label for="address"> ADDERESS</label><br>
+        <textarea cols="80" rows="5" name="address" id="address" class="name" placeholder="CURRENT ADDRESS"></textarea><br>
+  
+
+      <div>
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="mail" class="name" placeholder="EMAIL"><br>
+      </div>
+  
+       <div>
+        <label for="pass">PASSWORD</label>
+        <input type="password" name="password" id="pass" class="name" placeholder="PASSWORD"><br>
+    </div>
+
+    
+        <label for="repass">RE-TYPE PASSWORD</label>
+        <input type="password" name="password" id="repass" class="name" placeholder="re-type password"><br>
+
+
+        <input type="submit" value="SUBMIT" id="submit">
+    
+</form>
+</div>
+ 
+
+
 </body>
+
 </html>  
